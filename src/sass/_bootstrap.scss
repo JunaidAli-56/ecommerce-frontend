@@ -1,6 +1,7 @@
 $primary: #F4CE14;
 $dark: #131921;
 $dark-shade: #3b4149;
+$dark-low: #232f3e;
 $light: #F5F5F7;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
@@ -17,9 +18,212 @@ $light: #F5F5F7;
 
     .upper-conatiner {
         .search-input {
-            border-radius: 4px;
+            border-radius: 2px;
+
+        }
+
+        .header-upper-links {
+            img {
+                width: 35px;
+                height: 35px;
+            }
+
+            p {
+                color: $light;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.header-bottom {
+    background-color: $dark-low;
+
+    .menu-bottom {
+        .shop-dropdown {
+            button {
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 400;
+                letter-spacing: .3;
+                text-transform: uppercase;
+                color: $light;
+            }
+
+            .menu {
+                width: 100%;
+                background-color: $dark;
+                transform: translate3d(0px, 54px, 0px) !important;
+
+                a {
+                    background: transparent;
+                    color: $light;
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin: 10px 0px;
+                    border-bottom: 1px solid $dark-shade;
+
+                    &:hover {
+                        color: $primary !important;
+                    }
+                }
+            }
+        }
+
+        .menu-links {
+            a {
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 400;
+                letter-spacing: .3;
+                text-transform: uppercase;
+            }
         }
     }
 }
 
 // Header End
+
+
+
+// Footer Start 
+.footer-upper {
+    .newsletter-div {
+        // border: 2px solid red;
+
+        div {
+            display: flex;
+            justify-content: flex-end;
+
+            h2 {
+                padding-top: 3px;
+                font-size: 26px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .input-div {
+        // border: 2px solid #00ff04;
+        padding: 0;
+        margin: 0;
+        padding-left: 10px !important;
+        padding-inline-end: 10em !important;
+
+        div {
+            background-color: $light;
+            border-radius: 4px;
+
+            .input-style {
+                background: transparent;
+
+                &:focus {
+                    border-color: transparent;
+                    box-shadow: none;
+                }
+            }
+
+            button {
+                border-radius: 4px !important;
+                background: $primary;
+                color: $light;
+
+                &:hover {
+                    background: $primary;
+                    color: $light;
+                }
+            }
+        }
+    }
+}
+
+.footer-lower {
+    div {
+        span {
+            margin-top: 15px !important;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        h5 {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: .6px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0 !important;
+            padding: 0 !important;
+
+            li {
+                // border: 2px solid red;
+                margin-bottom: 15px;
+
+                span {
+                    padding-top: 15px;
+                    color: rgba(255, 255, 255, 0.947);
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $light;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.icon-row {
+    div {
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0 !important;
+            padding: 0 !important;
+
+            li {
+                padding: 0px 6px;
+
+                &:hover {
+                    margin-top: -10px !important;
+                    cursor: pointer;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $light;
+                    font-size: 24px;
+
+                    &:hover {
+                        color: $primary;
+                        transition: 0.1s ease !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright-row {
+    hr {
+        background-color: $light;
+        height: 2px;
+        margin: 0px auto;
+        width: 95%;
+    }
+
+}
+
+// Footer End 
