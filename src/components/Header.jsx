@@ -1,8 +1,40 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import { BsSearch } from "react-icons/bs"
 const Header = () => {
   return (
-    <div>Header</div>
+    <>
+      <header className="header-top-strip py-3">
+        <div className="container">
+          <div className="row">
+            <div className="col-6">
+              <p className='text-white mb-0'>Free Shipping Over $100 & Free Return</p>
+            </div>
+            <div className="col-6">
+              <p className='text-end text-white mb-0'>Hotline: <a href='tel:+92 102030490'> +92 102030490</a></p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <header className="header-upper py-3">
+        <div className="container upper-conatiner">
+          <div className="row">
+            <div className="col-2">
+              <h2>
+                <Link className='text-white'>Vouge</Link>
+              </h2>
+            </div>
+            <div className="col-5">
+              <div className="input-group search-input rounded-2">
+                <input type="text" className="form-control" placeholder="Search Product Here..." aria-label="Search Product Here..." aria-describedby="basic-addon2" />
+                <span className="input-group-text bg-primary" id="basic-addon2"><BsSearch /></span>
+              </div>
+            </div>
+            <div className="col-5"></div>
+          </div>
+        </div>
+      </header>
+    </>
   )
 }
 

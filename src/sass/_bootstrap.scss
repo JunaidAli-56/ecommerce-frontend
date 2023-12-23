@@ -1,4 +1,25 @@
-$primary: #7d2804;
+$primary: #F4CE14;
+$dark: #131921;
+$dark-shade: #3b4149;
 $light: #F5F5F7;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+
+// Header Start
+.header-top-strip {
+    background: $dark;
+    border-bottom: 1px solid $dark-shade;
+}
+
+.header-upper {
+    background: $dark;
+
+    .upper-conatiner {
+        .search-input {
+            border-radius: 4px;
+        }
+    }
+}
+
+// Header End
