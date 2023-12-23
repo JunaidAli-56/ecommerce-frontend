@@ -6,10 +6,10 @@ const Footer = () => {
   const year = new Date().getFullYear()
   return (
     <>
-      <footer>
-        <div className="container-fluid bg-dark text-white">
+      <footer className="bg-dark">
+        <div className="container text-white">
           <div className="row py-4 footer-upper">
-            <div className="col-lg-5 col-md-12 col-sm-12  ps-5 newsletter-div">
+            <div className="col-lg-5 col-md-12 col-sm-12 ps-5 newsletter-div">
               <div>
                 <img src="images/newsletter.png" alt="newsletters" />
                 <h2 className="ms-2 me-4 text-white">SignUp For Newsletter</h2>
@@ -24,7 +24,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="row footer-lower">
+          <hr />
+          <div className="row footer-lower pt-3">
             <div className="col-lg-3 col-md-3 col-sm-4 col-contact">
               <h5>contact us</h5>
               <ul>
