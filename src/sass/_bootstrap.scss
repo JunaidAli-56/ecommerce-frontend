@@ -412,6 +412,59 @@ $light: #F5F5F7;
 
 }
 
+// Feature Product Card...
+.product-card {
+    padding: 15px;
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .wishlist-icon {
+        top: 4%;
+        right: 15px;
+    }
+
+    &:hover {
+        .action-bar {
+            right: 15px;
+        }
+    }
+
+    .product-detail {
+        h6 {
+            color: $primary;
+            font-size: 13px;
+        }
+
+        h5 {
+            color: $dark;
+            font-size: 15px;
+        }
+
+        p {
+            color: $dark;
+            font-size: 16px;
+        }
+    }
+
+    .action-bar {
+        top: 11%;
+        right: -20px;
+    }
+}
+
+.product-card .product-image>img:last-child {
+    display: none;
+}
+
+.product-card:hover .product-image>img:nth-child(1) {
+    display: none;
+}
+
+.product-card:hover .product-image>img:last-child {
+    display: block;
+}
+
 
 // Brand Slider ----------
 
@@ -437,16 +490,19 @@ $light: #F5F5F7;
 
         .blog-content {
             padding: 15px;
-            .date{
-                font-size:13px;
+
+            .date {
+                font-size: 13px;
                 line-height: 24px;
                 text-transform: uppercase;
                 font-weight: 400;
             }
-            h5{
+
+            h5 {
                 font-size: 18px;
             }
-            .desc{
+
+            .desc {
                 font-size: 13px;
                 line-height: 22px;
             }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './product-card.scss'
 
-const ProductCard = () => {
+const ProductCard2 = () => {
     return (
         <div className="container-fluid"   >
             <div className="row pc-upper-div">
@@ -85,4 +85,4 @@ const ProductCard = () => {
     );
 };
 
-export default ProductCard;
+export default ProductCard2;

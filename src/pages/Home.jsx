@@ -2,10 +2,11 @@ import React from 'react'
 import HeroSection from '../components/HeroSection'
 import SpecialProduct from '../components/SpecialProduct'
 import MainProduct from '../components/MianProduct/MainProduct'
-import ProductCard from '../components/ProductCard/ProductCard'
+import ProductCard2 from '../components/ProductCard2/ProductCard2'
 import SliderCard from '../components/SliderCard/SliderCard'
 import Brands from '../components/BrandCarousel/Brands'
 import BlogCard from '../components/BlogCard'
+import ProductCard from '../components/ProductCard'
 
 const Home = () => {
   return (
@@ -109,7 +110,7 @@ const Home = () => {
               {/* product card row */}
               <div className="row product-card-row">
                 <div className="col bg-white productCard-main-col">
-                  <ProductCard />
+                  <ProductCard2 />
                 </div>
               </div>
 
@@ -195,6 +196,19 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <section className='blog-wrapper py-3 py-lg-5'>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h3 className='section-heading mb-4'>Feature Collection</h3>
+            </div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
       <section className='marquee-wrapper py-3 py-lg-5'>
         <div className="container">
           <div className="row">
