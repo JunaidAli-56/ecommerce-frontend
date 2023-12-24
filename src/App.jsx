@@ -1,5 +1,5 @@
 import React from 'react';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle'
+import 'bootstrap/dist/js/bootstrap.bundle'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from "./components/Layout"
 import Home from "./pages/Home"

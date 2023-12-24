@@ -159,55 +159,57 @@ $light: #F5F5F7;
         }
     }
 }
+
 // Hero Section short cards------
 .short-card {
+
     //  border: 2px solid red; 
+    div {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+
+
         div {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-    
-    
-    
-            div {
-                // border: 2px solid red;
-                position: relative;
+            // border: 2px solid red;
+            position: relative;
+            border-radius: 12px;
+            cursor: pointer;
+
+
+
+            img {
                 border-radius: 12px;
-                cursor: pointer;
-    
-    
-    
-                img {
-                    border-radius: 12px;
-                    position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    object-fit: cover;
-    
-                    &:hover {
-                        transform: scale(0.7);
-    
-                    }
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+
+                &:hover {
+                    transform: scale(0.7);
+
                 }
             }
         }
     }
-    
-    .short-card-about {
-    
-        p {
-            color: #b74e03;
-            margin-bottom: 0;
-            text-transform: uppercase;
-        }
-    
-        h4 {
-            text-transform: capitalize;
-            font-size: 20px;
-    
-        }
-    
+}
+
+.short-card-about {
+
+    p {
+        color: #b74e03;
+        margin-bottom: 0;
+        text-transform: uppercase;
     }
+
+    h4 {
+        text-transform: capitalize;
+        font-size: 20px;
+
+    }
+
+}
 
 // Services-------------
 .services-section-row {
@@ -410,14 +412,13 @@ $light: #F5F5F7;
 }
 
 
-// Company Slider ----------
+// Brand Slider ----------
 
-.company-slider {
-    // border: 2px solid red;
-
-    .col {
-        border-radius: 12px;
-        box-shadow: #00000040 0px 5px 15px;
+.marquee-inner-wrapper {
+    div {
+        img{
+            margin: 0px 20px;
+        }
     }
 }
 

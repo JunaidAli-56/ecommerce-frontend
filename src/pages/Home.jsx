@@ -1,10 +1,11 @@
 import React from 'react'
-import CompanySlider from '../components/CompanySlider/CompanySlider'
 import HeroSection from '../components/HeroSection'
 import SpecialProduct from '../components/SpecialProduct'
 import MainProduct from '../components/MianProduct/MainProduct'
 import ProductCard from '../components/ProductCard/ProductCard'
 import SliderCard from '../components/SliderCard/SliderCard'
+import Brands from '../components/BrandCarousel/Brands'
+import BlogCard from '../components/BlogCard'
 
 const Home = () => {
   return (
@@ -194,15 +195,24 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="row company-slider my-lg-5 my-3">
-          <div className="col p-0">
-            <CompanySlider />
+      <section className='marquee-wrapper py-3 py-lg-5'>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <Brands />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section className='blog-wrapper py-3 py-lg-5'>
+        <div className="container">
+          <div className="row">
+            <BlogCard />
+          </div>
+        </div>
+      </section>
     </>
   )
 }
 
-export default Home
+export default Home;
