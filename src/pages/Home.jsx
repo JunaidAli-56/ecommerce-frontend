@@ -207,6 +207,12 @@ const Home = () => {
       <section className='blog-wrapper py-3 py-lg-5'>
         <div className="container">
           <div className="row">
+            <div className="col-12">
+              <h3 className='section-heading mb-4'>Our Latest Blogs</h3>
+            </div>
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
             <BlogCard />
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Marquee from "react-fast-marquee";
 const Brands = () => {
     return (
-        <div className='marquee-inner-wrapper bg-white box-shadow-light rounded-3'>
+        <div className='marquee-inner-wrapper bg-white shadow-light rounded-3'>
             <Marquee className='d-flex'>
                 <div>
                     <img src="images/brand-01.png" alt="brand" />

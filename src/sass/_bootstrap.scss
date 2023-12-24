@@ -2,6 +2,7 @@ $primary: #F4CE14;
 $dark: #131921;
 $dark-shade: #3b4149;
 $dark-low: #232f3e;
+$white: #FFFFFF;
 $light: #F5F5F7;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
@@ -416,11 +417,43 @@ $light: #F5F5F7;
 
 .marquee-inner-wrapper {
     div {
-        img{
+        img {
             margin: 0px 20px;
         }
     }
 }
+
+// Blog cards=================
+.blog-wrapper {
+    .blog-card {
+        background-color: $white;
+        border-radius: 0px 0px 10px 10px;
+
+        .card-image {
+            img {
+                border-radius: 10px 10px 0px 0px;
+            }
+        }
+
+        .blog-content {
+            padding: 15px;
+            .date{
+                font-size:13px;
+                line-height: 24px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+            h5{
+                font-size: 18px;
+            }
+            .desc{
+                font-size: 13px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
 
 // Footer Start 
 .footer-upper {
