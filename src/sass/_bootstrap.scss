@@ -1,4 +1,4 @@
-$primary: #F4CE14;
+$primary: #E9B824;
 $dark: #131921;
 $dark-shade: #3b4149;
 $dark-low: #232f3e;
@@ -465,6 +465,61 @@ $light: #F5F5F7;
     display: block;
 }
 
+// Speacial Product 
+
+.speacial-wrapper {
+    .special-product-card {
+        padding: 20px 10px;
+        border-radius: 10px;
+        background-color: $white;
+
+        .special-product-content {
+            .badge {
+                background-color: #fc3d3d;
+            }
+
+            .button {
+                &:hover {
+                    background-color: $primary !important;
+                }
+            }
+        }
+    }
+}
+
+
+// Famous  Product 
+.famous-wrapper {
+    .famous-card {
+        img {
+            border-radius: 10px;
+        }
+
+        .famous-card-content {
+            top: 7%;
+            left: 7%;
+
+            h5 {
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 400;
+                margin-bottom: 7px;
+            }
+
+            h6 {
+                font-size: 22px;
+                line-height: 34px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 24px;
+                font-weight: 100;
+            }
+        }
+    }
+}
 
 // Brand Slider ----------
 

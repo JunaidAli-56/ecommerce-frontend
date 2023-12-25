@@ -182,21 +182,59 @@ const Home = () => {
                   />
                 </div>
               </div>
-
-              {/* special product */}
-              <div className="row special-product-row">
-                <div className="col-6">
-                  <SpecialProduct />
-                </div>
-                <div className="col-6">
-                  <SpecialProduct />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* special product */}
+      <section className='speacial-wrapper py-3 py-lg-5'>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h3>Speacial Product</h3>
+            </div>
+          </div>
+          <div className="row">
+            <SpecialProduct />
+            <SpecialProduct />
+            <SpecialProduct />
+          </div>
+        </div>
+      </section>
+      {/* Popular product */}
+      <section className='popular-wrapper py-3 py-lg-5'>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h3>Our Popular Product</h3>
+            </div>
+          </div>
+          <div className="row">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+          </div>
+        </div>
+      </section>
+      {/* Famous product */}
+      <section className='famous-wrapper py-3 py-lg-5'>
+        <div className="container">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img src="images/famous-1.webp" alt="famous" className='img-fluid'/>
+                <div className="famous-card-content text-white position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>from $399 or $16.62/mo. from 24/mo.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <section className='blog-wrapper py-3 py-lg-5'>
+      </section>
+      <section className='featured-wrapper py-3 py-lg-5'>
         <div className="container">
           <div className="row">
             <div className="col-12">

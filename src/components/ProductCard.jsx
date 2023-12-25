@@ -13,15 +13,15 @@ const ProductCard = () => {
                     </Link>
                 </div>
                 <div className="product-image">
-                    <img src="images/watch.jpg"  className="img-fluid" alt="product-image" />
-                    <img src="images/watch-1.png" className="img-fluid"  alt="product-image" />
+                    <img src="images/watch.jpg"  className="img-fluid" alt="product" />
+                    <img src="images/watch-1.png" className="img-fluid"  alt="product" />
                 </div>
                 <div className="product-detail">
                     <h6 className="product-brand">Havels</h6>
                     <h5 className="product-title">Kids headphones bulk 10 pack multi colored for students</h5>
                     <ReactStars
                         count={5}
-                        value="3"
+                        value={4}
                         size={24}
                         edit={false}
                         activeColor="#ffd700"
