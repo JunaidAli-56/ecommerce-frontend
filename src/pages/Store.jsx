@@ -27,15 +27,28 @@ const Store = () => {
                                 <h3 className="filter-title">Filter By</h3>
                                 <div className='ms-1'>
                                     <h5 className="sub-title">Availablity</h5>
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                                        <label className="form-check-label form-check-title" htmlFor=''>
-                                            In Stock (1)
-                                        </label>
+                                    <div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                                            <label className="form-check-label form-check-title" htmlFor=''>
+                                                In Stock (1)
+                                            </label>
+                                        </div>
+                                        <div className="form-check">
+                                            <input type="checkbox" className="form-check-input" value="" id='defaultCheck1' />
+                                            <label className='form-check-label form-check-title' htmlFor=''>Out Stock (0)</label>
+                                        </div>
                                     </div>
-                                    <div className="form-check">
-                                        <input type="checkbox" className="form-check-input" value="" id='defaultCheck1' />
-                                        <label className='form-check-label form-check-title' htmlFor=''>Out Stock (0)</label>
+                                    <h5 className="sub-title">Price</h5>
+                                    <div className='d-flex align-items-center gap-10'>
+                                        <div className="form-floating mb-3">
+                                            <input type="email" className="form-control" id="floatingInput" placeholder="From" />
+                                            <label htmlFor="floatingInput">From</label>
+                                        </div>
+                                        <div className="form-floating mb-3">
+                                            <input type="email" className="form-control" id="floatingInput1" placeholder="To" />
+                                            <label htmlFor="floatingInput1">To</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
