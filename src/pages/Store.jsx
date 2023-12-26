@@ -153,7 +153,37 @@ const Store = () => {
                             </div>
                         </div>
                         <div className="col-9">
-
+                            <div className="filter-sort-grid">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <div className="d-flex align-items-center gap-10">
+                                        <p className='mb-0 d-block' style={{"width":"50%"}}>Sort by:</p>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="best-selling" selected>Best Selling</option>
+                                            <option value="title-ascending">Alphabetically, A-Z</option>
+                                            <option value="title-descending">Alphabetically, Z-A</option>
+                                            <option value="price-ascending">Price low to high</option>
+                                            <option value="price-descending">price high to low</option>
+                                        </select>
+                                    </div>
+                                    <div className="d-flex align-items-center gap-10 grid-wrapper">
+                                        <p className="total-product mb-0">21 Product</p>
+                                        <div className="d-flex align-items-center gap-10 grid-box-wrapper">
+                                            <div className='grid-box'>
+                                                <img src="images/gr4.svg" alt="grid" className='d-block img-fluid' />
+                                            </div>
+                                            <div className='grid-box'>
+                                                <img src="images/gr3.svg" alt="grid" className='d-block img-fluid' />
+                                            </div>
+                                            <div className='grid-box'>
+                                                <img src="images/gr2.svg" alt="grid" className='d-block img-fluid' />
+                                            </div>
+                                            <div className='grid-box'>
+                                                <img src="images/gr.svg" alt="grid" className='d-block img-fluid' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
