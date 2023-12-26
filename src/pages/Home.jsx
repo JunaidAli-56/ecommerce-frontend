@@ -5,10 +5,12 @@ import ItemsCard from '../components/ItemsCard/ItemsCard'
 import Brands from '../components/BrandCarousel/Brands'
 import BlogCard from '../components/BlogCard'
 import ProductCard from '../components/ProductCard'
+import MetaTag from '../components/MetaTag'
 
 const Home = () => {
   return (
     <>
+      <MetaTag title="Home" />
       {/* Hero Section */}
       <div className='container flex-wrap'>
         <div className="row my-lg-5 my-3">

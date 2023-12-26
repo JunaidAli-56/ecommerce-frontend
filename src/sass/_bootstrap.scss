@@ -1,5 +1,6 @@
 $primary: #FEBD69;
 $dark: #131921;
+$gray: #6C757D;
 $dark-shade: #3b4149;
 $dark-low: #232f3e;
 $white: #FFFFFF;
@@ -685,3 +686,44 @@ $light: #F5F5F7;
 }
 
 // Footer End 
+
+
+
+// Store Page Style....
+.store-wrapper {
+    .filter-card {
+        background-color: $white ;
+        border-radius: 10px;
+        padding: 10px 15px;
+
+        .filter-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            color: $dark;
+        }
+
+        ul,
+        .form-check-title {
+            color: $gray;
+            list-style: none;
+            font-size: 13px;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+        .sub-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        input {
+            box-shadow: none;
+            &:checked {
+                background-color: $primary;
+                border: none;
+            }
+        }
+    }
+}
