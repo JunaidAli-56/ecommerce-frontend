@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './product-card.scss'
+import './items-card.scss'
 
-const ProductCard2 = () => {
+const ItemsCard = () => {
     return (
-        <div className="container-fluid"   >
+        <div className="container-fluid">
             <div className="row pc-upper-div">
                 <div className="col-lg-3 col-md-6 col-sm-6 m-0 p-2 product-card-main-div border-style">
                     <div className="py-3 ps-1">
@@ -85,4 +85,4 @@ const ProductCard2 = () => {
     );
 };
 
-export default ProductCard2;
+export default ItemsCard;
