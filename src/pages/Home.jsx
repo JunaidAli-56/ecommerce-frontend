@@ -9,6 +9,7 @@ import ProductCard from '../components/ProductCard'
 const Home = () => {
   return (
     <>
+      {/* Hero Section */}
       <div className='container flex-wrap'>
         <div className="row my-lg-5 my-3">
           <div className="col p-0">

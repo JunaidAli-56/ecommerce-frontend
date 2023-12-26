@@ -17,9 +17,9 @@ const Footer = () => {
             </div>
             <div className="col-lg-7 col-md-12 col-sm-12 pe-5 input-div">
               <div>
-                <div class="input-group">
-                  <input type="text" class="form-control  border-0 input-style" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2" />
-                  <button class="btn m-1" type="button" id="button-addon2">SUBSCRIBE</button>
+                <div className="input-group">
+                  <input type="text" className="form-control  border-0 input-style" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2" />
+                  <button className="btn m-1" type="button" id="button-addon2">SUBSCRIBE</button>
                 </div>
               </div>
             </div>
