@@ -25,7 +25,7 @@ const ProductCard = () => {
                         size={24}
                         edit={false}
                         activeColor="#ffd700"
-                    />,
+                    />
                     <p className='price'>$100.00</p>
                 </div>
                 <div className="action-bar position-absolute">

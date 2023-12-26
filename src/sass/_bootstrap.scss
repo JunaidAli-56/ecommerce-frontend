@@ -694,7 +694,7 @@ $light: #F5F5F7;
     .filter-card {
         background-color: $white ;
         border-radius: 10px;
-        padding: 10px 15px;
+        padding: 15px 15px 25px;
 
         .filter-title {
             font-size: 16px;
@@ -716,14 +716,43 @@ $light: #F5F5F7;
             font-size: 14px;
             font-weight: 600;
             margin-bottom: 15px;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         input {
             box-shadow: none;
+
             &:checked {
                 background-color: $primary;
                 border: none;
+            }
+        }
+
+        .color-wrapper {
+            ul {
+                padding: 0px;
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                gap: 10px;
+
+                li {
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 50%;
+                    background-color: $primary;
+                }
+            }
+        }
+
+        .random-product {
+            h5 {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            &:nth-child(1) {
+                border-bottom: 1px solid #dedede;
             }
         }
     }
