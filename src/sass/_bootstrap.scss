@@ -574,8 +574,8 @@ $light: #F5F5F7;
 
 // Footer End 
 
- // Side-Bar Style
- .filter-card {
+// Side-Bar Style in store and blog
+.filter-card {
     background-color: $white ;
     border-radius: 10px;
     padding: 15px 15px 25px;
@@ -734,4 +734,34 @@ $light: #F5F5F7;
         }
     }
 
+}
+
+
+//Contact page 
+.contact-form-wrapper {
+    background-color: $white;
+    padding: 15px 10px;
+    border-radius: 10px;
+
+    &>div {
+        width: 48%;
+    }
+
+    .contact-title {
+        font-size: 26px;
+        line-height: 35px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    input,
+    textarea {
+        border: 0;
+        background-color: $light-gray;
+        
+        &:focus {
+            background-color: $light-gray;
+            box-shadow: none;
+        }
+    }
 }
