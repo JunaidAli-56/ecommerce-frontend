@@ -1,6 +1,9 @@
 import React from 'react'
 import BreadCrumb from '../components/BreadCrumb'
 import MetaTag from '../components/MetaTag'
+import { GoHomeFill } from "react-icons/go";
+import { IoIosCall, IoMdMail } from "react-icons/io";
+import { TiInfoLarge } from "react-icons/ti";
 
 const Contact = () => {
   return (
@@ -37,6 +40,30 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="contact-title">Get in touch with us</h3>
+                  <div>
+                    <ul className='ps-0'>
+                      <li>
+                        <GoHomeFill className='fs-5 text-secondary'/>
+                        <address className='mb-0'>
+                          33 New Montgomery St. Ste 750 San Francisco, CA, USA 94105
+                        </address>
+                      </li>
+                      <li>
+                        <IoIosCall className='fs-5 text-secondary'/>
+                        <a href="tel:+92 001-2341-001">(+92) 001-2341-001</a>
+                      </li>
+                      <li>
+                        <IoMdMail className='fs-5 text-secondary'/>
+                        <a href="mailto:junaid@mail.com">junaid@mail.com</a>
+                      </li>
+                      <li>
+                        <TiInfoLarge className='fs-5 text-secondary'/>
+                        <p className='mb-0'>
+                          Monday / Friday 10 AM / 8 PM
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

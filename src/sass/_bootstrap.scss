@@ -752,16 +752,36 @@ $light: #F5F5F7;
         line-height: 35px;
         font-weight: 500;
         text-align: left;
+        margin-bottom: 15px;
     }
 
     input,
     textarea {
         border: 0;
         background-color: $light-gray;
-        
+
         &:focus {
             background-color: $light-gray;
             box-shadow: none;
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+
+            address,
+            a,
+            p {
+                color: $gray;
+                font-weight: 500;
+                font-size: 14px;
+            }
         }
     }
 }
