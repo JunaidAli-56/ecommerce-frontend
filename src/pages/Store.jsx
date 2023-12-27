@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactStars from "react-rating-stars-component";
 import BreadCrumb from '../components/BreadCrumb'
 import MetaTag from '../components/MetaTag'
+import ProductCard from '../components/ProductCard';
 const Store = () => {
+    const [grid, setGrid] = useState(4);
     return (
         <>
             <MetaTag title="Our Store" />
@@ -156,7 +158,7 @@ const Store = () => {
                             <div className="filter-sort-grid">
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="d-flex align-items-center gap-10">
-                                        <p className='mb-0 d-block' style={{"width":"50%"}}>Sort by:</p>
+                                        <p className='mb-0 d-block' style={{ "width": "50%" }}>Sort by:</p>
                                         <select class="form-select" aria-label="Default select example">
                                             <option value="best-selling" selected>Best Selling</option>
                                             <option value="title-ascending">Alphabetically, A-Z</option>
@@ -168,20 +170,28 @@ const Store = () => {
                                     <div className="d-flex align-items-center gap-10 grid-wrapper">
                                         <p className="total-product mb-0">21 Product</p>
                                         <div className="d-flex align-items-center gap-10 grid-box-wrapper">
-                                            <div className='grid-box'>
+                                            <div className='grid-box' onClick={() => setGrid(3)}>
                                                 <img src="images/gr4.svg" alt="grid" className='d-block img-fluid' />
                                             </div>
-                                            <div className='grid-box'>
+                                            <div className='grid-box' onClick={() => setGrid(4)}>
                                                 <img src="images/gr3.svg" alt="grid" className='d-block img-fluid' />
                                             </div>
-                                            <div className='grid-box'>
+                                            <div className='grid-box' onClick={() => setGrid(6)}>
                                                 <img src="images/gr2.svg" alt="grid" className='d-block img-fluid' />
                                             </div>
-                                            <div className='grid-box'>
+                                            <div className='grid-box' onClick={() => setGrid(12)}>
                                                 <img src="images/gr.svg" alt="grid" className='d-block img-fluid' />
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div className='product-list py-lg-4 py-2'>
+                                <div className="d-flex flex-wrap gap-10">
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
                                 </div>
                             </div>
                         </div>

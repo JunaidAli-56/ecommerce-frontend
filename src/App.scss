@@ -26,7 +26,7 @@ a {
   display: inline-block;
 }
 
-.shadow-light{
+.shadow-light {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -41,6 +41,41 @@ a {
 .gap-15 {
   gap: 15px;
 }
+
 .gap-30 {
   gap: 30px;
+}
+
+// grid dor card and gr working as a col 
+.gr-12 {
+  width: 100%;
+
+  .product-card {
+    display: flex;
+    gap: 20px;
+
+    .product-image {
+      img {
+        height: 200px !important;
+        width: 400px;
+      }
+    }
+  }
+
+  .action-bar {
+    top: 15%;
+  }
+
+}
+
+.gr-6 {
+  width: 49%;
+}
+
+.gr-4 {
+  width: 32%;
+}
+
+.gr-3 {
+  width: 24%;
 }

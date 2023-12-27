@@ -1,20 +1,21 @@
 import React from 'react'
 import ReactStars from "react-rating-stars-component";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
-const ProductCard = () => {
+const ProductCard = ({ grid }) => {
+    const location = useLocation();
     return (
-        <div className='col-3'>
+        <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}>
             <Link className="product-card position-relative shadow-light">
                 <div className="wishlist-icon position-absolute">
                     <Link>
                         <img src="images/wish.svg" alt="wish" />
                     </Link>
                 </div>
-                <div className="product-image">
-                    <img src="images/watch.jpg"  className="img-fluid" alt="product" />
-                    <img src="images/watch-1.png" className="img-fluid"  alt="product" />
+                <div className="product-image d-flex justify-content-center align-items-center">
+                    <img src="images/watch.jpg" className="img-fluid" alt="product" />
+                    <img src="images/watch-2.jpg" className="img-fluid" alt="product" />
                 </div>
                 <div className="product-detail">
                     <h6 className="product-brand">Havels</h6>
@@ -26,6 +27,9 @@ const ProductCard = () => {
                         edit={false}
                         activeColor="#ffd700"
                     />
+                    <p className={`desc ${grid === 12 ? "d-block":"d-none"}`}>
+                        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt...
+                    </p>
                     <p className='price'>$100.00</p>
                 </div>
                 <div className="action-bar position-absolute">
