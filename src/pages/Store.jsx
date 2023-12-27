@@ -186,6 +186,7 @@ const Store = () => {
                                     </div>
                                 </div>
                             </div>
+                            {/* Product Card */}
                             <div className='product-list py-lg-4 py-2'>
                                 <div className="d-flex flex-wrap gap-10">
                                     <ProductCard grid={grid} />

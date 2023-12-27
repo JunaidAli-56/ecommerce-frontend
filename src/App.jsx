@@ -7,6 +7,7 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import "./App.scss"
 import Store from './pages/Store';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path='store' element={<Store />} />
+            <Route path='blogs' element={<Blog />} />
             <Route path='about' element={<About />} />
             <Route path='contact' element={<Contact />} />
-            <Route path='store' element={<Store />} />
           </Route>
         </Routes>
       </BrowserRouter>
