@@ -840,6 +840,7 @@ $light: #F5F5F7;
     }
 }
 
+// wishlist card
 .wishlist-card {
     padding: 20px 10px;
     background-color: $white;
@@ -856,5 +857,26 @@ $light: #F5F5F7;
         h6 {
             color: $gray;
         }
+    }
+}
+
+//Login
+
+.login-card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: $white;
+    width: 400px;
+
+    input {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    a {
+        color: $dark-shade;
+        font-weight: 400;
+
     }
 }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import ReactStars from "react-rating-stars-component";
-import BreadCrumb from '../components/BreadCrumb'
-import MetaTag from '../components/MetaTag'
-import ProductCard from '../components/ProductCard';
-import Color from '../components/Color';
+import BreadCrumb from '../../components/BreadCrumb'
+import MetaTag from '../../components/MetaTag'
+import ProductCard from '../../components/ProductCard';
+import Color from '../../components/Color';
 const Store = () => {
     const [grid, setGrid] = useState(4);
     return (

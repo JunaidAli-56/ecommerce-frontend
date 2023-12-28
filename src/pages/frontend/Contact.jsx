@@ -1,6 +1,6 @@
 import React from 'react'
-import BreadCrumb from '../components/BreadCrumb'
-import MetaTag from '../components/MetaTag'
+import BreadCrumb from '../../components/BreadCrumb'
+import MetaTag from '../../components/MetaTag'
 import { GoHomeFill } from "react-icons/go";
 import { IoIosCall, IoMdMail } from "react-icons/io";
 import { TiInfoLarge } from "react-icons/ti";

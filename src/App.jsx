@@ -1,15 +1,21 @@
-import React from 'react';
-import 'bootstrap/dist/js/bootstrap.bundle'
+import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from "./components/Layout"
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Contact from "./pages/Contact"
 import "./App.scss"
-import Store from './pages/Store';
-import Blog from './pages/Blog';
-import CompareProduct from './pages/CompareProduct';
-import Wishlist from './pages/Wishlist';
+import 'bootstrap/dist/js/bootstrap.bundle'
+
+// Components
+import Layout from "./components/Layout"
+// Pages
+import Home from "./pages/frontend/Home"
+import About from "./pages/frontend/About"
+import Contact from "./pages/frontend/Contact"
+import Store from './pages/frontend/Store';
+import Blog from './pages/frontend/Blog';
+import CompareProduct from './pages/frontend/CompareProduct';
+import Wishlist from './pages/frontend/Wishlist';
+import Login from './pages/auth/Login';
+import Register from './pages/auth/Register';
+import ForgotPassword from './pages/auth/ForgotPassword';
 
 function App() {
   return (
@@ -24,6 +30,10 @@ function App() {
             <Route path='contact' element={<Contact />} />
             <Route path='compare-product' element={<CompareProduct />} />
             <Route path='wishlist' element={<Wishlist />} />
+            {/* Authentication */}
+            <Route path='login' element={<Login />} />
+            <Route path='register' element={<Register />} />
+            <Route path='forgot-password' element={<ForgotPassword />} />
           </Route>
         </Routes>
       </BrowserRouter>

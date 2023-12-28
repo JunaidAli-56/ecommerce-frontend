@@ -1,7 +1,7 @@
 import React from 'react'
-import MetaTag from '../components/MetaTag'
-import BreadCrumb from '../components/BreadCrumb'
-import Color from '../components/Color'
+import MetaTag from '../../components/MetaTag'
+import BreadCrumb from '../../components/BreadCrumb'
+import Color from '../../components/Color'
 
 const CompareProduct = () => {
   return (

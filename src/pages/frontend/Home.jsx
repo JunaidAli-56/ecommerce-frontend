@@ -1,11 +1,11 @@
 import React from 'react'
-import HeroSection from '../components/HeroSection'
-import SpecialProduct from '../components/SpecialProduct'
-import ItemsCard from '../components/ItemsCard/ItemsCard'
-import Brands from '../components/BrandCarousel/Brands'
-import BlogCard from '../components/BlogCard'
-import ProductCard from '../components/ProductCard'
-import MetaTag from '../components/MetaTag'
+import HeroSection from '../../components/HeroSection'
+import SpecialProduct from '../../components/SpecialProduct'
+import ItemsCard from '../../components/ItemsCard/ItemsCard'
+import Brands from '../../components/BrandCarousel/Brands'
+import BlogCard from '../../components/BlogCard'
+import ProductCard from '../../components/ProductCard'
+import MetaTag from '../../components/MetaTag'
 
 const Home = () => {
   return (
