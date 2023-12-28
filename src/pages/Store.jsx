@@ -3,6 +3,7 @@ import ReactStars from "react-rating-stars-component";
 import BreadCrumb from '../components/BreadCrumb'
 import MetaTag from '../components/MetaTag'
 import ProductCard from '../components/ProductCard';
+import Color from '../components/Color';
 const Store = () => {
     const [grid, setGrid] = useState(4);
     return (
@@ -54,19 +55,7 @@ const Store = () => {
                                         </div>
                                     </div>
                                     <h5 className="sub-title">Colors</h5>
-                                    <div className='color-wrapper'>
-                                        <ul>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
-                                        </ul>
-                                    </div>
+                                    <Color />
                                     <h5 className="sub-title">Size</h5>
                                     <div>
                                         <div className="form-check">

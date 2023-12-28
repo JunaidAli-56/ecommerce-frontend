@@ -612,23 +612,6 @@ $light: #F5F5F7;
         }
     }
 
-    .color-wrapper {
-        ul {
-            padding: 0px;
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            gap: 10px;
-
-            li {
-                height: 25px;
-                width: 25px;
-                border-radius: 30%;
-                background-color: $primary;
-            }
-        }
-    }
-
     .random-product {
         h5 {
             font-size: 14px;
@@ -637,6 +620,24 @@ $light: #F5F5F7;
 
         &:nth-child(1) {
             border-bottom: 1px solid #dedede;
+        }
+    }
+}
+
+// Color Component
+.color-wrapper {
+    ul {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 10px;
+
+        li {
+            height: 25px;
+            width: 25px;
+            border-radius: 30%;
+            background-color: $primary;
         }
     }
 }
@@ -782,6 +783,78 @@ $light: #F5F5F7;
                 font-weight: 500;
                 font-size: 14px;
             }
+        }
+    }
+}
+
+// Compare Product
+
+.compare-product-card {
+    padding: 20px 15px;
+    background-color: $white;
+    border-radius: 10px;
+
+    .compare-product-details {
+
+        .title,
+        .price {
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 500;
+            color: $dark-shade;
+        }
+
+        .product-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px;
+            border-top: 1px solid $light-gray;
+
+            h5 {
+                font-size: 17px;
+                margin-bottom: 0;
+            }
+
+            p {
+                color: $gray;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// Cross Icon
+.compare-product-card,
+.wishlist-card {
+    .cross-icon {
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        padding: 3px;
+        cursor: pointer;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+}
+
+.wishlist-card {
+    padding: 20px 10px;
+    background-color: $white;
+    border-radius: 10px;
+
+    .wishlist-card-details {
+
+        h5,
+        h6 {
+            font-size: 17px;
+            color: $gray;
+        }
+
+        h6 {
+            color: $gray;
         }
     }
 }
