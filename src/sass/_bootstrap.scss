@@ -862,16 +862,21 @@ $light: #F5F5F7;
 
 //Login
 
-.login-card {
+.auth-card {
     padding: 20px;
     border-radius: 10px;
     background-color: $white;
-    width: 400px;
+    width: 350px;
 
     input {
         &:focus {
             box-shadow: none;
         }
+    }
+
+    .desc {
+        font-size: 13px;
+        color: $gray;
     }
 
     a {

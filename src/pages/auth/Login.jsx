@@ -12,7 +12,7 @@ const Login = () => {
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-12 d-flex justify-content-center align-items-center">
-                            <div className="login-card">
+                            <div className="auth-card">
                                 <form>
                                     <h5 className='text-center mb-4 fs-3'>Login</h5>
                                     <div className="mb-3">
@@ -26,9 +26,10 @@ const Login = () => {
                                             forgot-password ?
                                         </Link>
                                     </div>
-                                    <div className='d-flex justify-content-between align-items-center'>
-                                        <button type="submit" className="btn btn-primary">Login</button>
-                                        <Link to='/register'>
+                                    <div className='d-flex justify-content-center align-items-center flex-column'>
+                                        <button type="submit" className="btn btn-primary w-100">Login</button>
+                                        <p className='my-2'>-- or --</p>
+                                        <Link to='/register' className='w-100 btn btn-dark text-white'>
                                             Register now
                                         </Link>
                                     </div>
