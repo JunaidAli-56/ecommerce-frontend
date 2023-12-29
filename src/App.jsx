@@ -22,6 +22,7 @@ import PrivacyPolicy from './pages/frontend/PrivacyPolicy';
 import ShippingPolicy from './pages/frontend/ShippingPolicy';
 import RefundPolicy from './pages/frontend/RefundPolicy';
 import TermsCondition from './pages/frontend/TermsCondition';
+import ProductDetail from './pages/frontend/ProductDetail';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path='store' element={<Store />} />
+            <Route path='product' element={<Store />} />
+            <Route path='product/:id' element={<ProductDetail />} />
             <Route path='blogs' element={<Blog />} />
             <Route path='blogs/:id' element={<BlogDetail />} />
             <Route path='about' element={<About />} />

@@ -7,7 +7,7 @@ const ProductCard = ({ grid }) => {
     const location = useLocation();
     return (
         <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}>
-            <Link className="product-card position-relative shadow-light">
+            <Link to=':id' className="product-card position-relative shadow-light">
                 <div className="wishlist-icon position-absolute">
                     <Link>
                         <img src="images/wish.svg" alt="wish" />
