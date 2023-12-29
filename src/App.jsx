@@ -18,6 +18,10 @@ import Register from './pages/auth/Register';
 import ForgotPassword from './pages/auth/ForgotPassword';
 import ResetPassword from './pages/auth/ResetPassword';
 import BlogDetail from './pages/frontend/BlogDetail';
+import PrivacyPolicy from './pages/frontend/PrivacyPolicy';
+import ShippingPolicy from './pages/frontend/ShippingPolicy';
+import RefundPolicy from './pages/frontend/RefundPolicy';
+import TermsCondition from './pages/frontend/TermsCondition';
 
 function App() {
   return (
@@ -38,6 +42,12 @@ function App() {
             <Route path='register' element={<Register />} />
             <Route path='forgot-password' element={<ForgotPassword />} />
             <Route path='reset-password' element={<ResetPassword />} />
+
+            {/* Footer Links */}
+            <Route path='privacy-policy' element={<PrivacyPolicy />} />
+            <Route path='refund-policy' element={<RefundPolicy />} />
+            <Route path='shipping-policy' element={<ShippingPolicy />} />
+            <Route path='terms-condition' element={<TermsCondition />} />
           </Route>
         </Routes>
       </BrowserRouter>

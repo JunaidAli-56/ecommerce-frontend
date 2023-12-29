@@ -47,11 +47,11 @@ const Footer = () => {
               <h5>information</h5>
               <ul>
                 <li>
-                  <li><Link>Terms of Service</Link></li>
-                  <li><Link>Shipping Policy</Link></li>
-                  <li><Link>Refund Policy</Link></li>
-                  <li><Link>Privacy Policy</Link></li>
-                  <li><Link>Blogs</Link></li>
+                  <li><Link to='/terms-condition'>Terms of Service</Link></li>
+                  <li><Link to='/shipping-policy'>Shipping Policy</Link></li>
+                  <li><Link to='/refund-policy'>Refund Policy</Link></li>
+                  <li><Link to='/privacy-policy'>Privacy Policy</Link></li>
+                  <li><Link to='/blogs'>Blogs</Link></li>
                 </li>
               </ul>
             </div>
