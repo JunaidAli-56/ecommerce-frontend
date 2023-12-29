@@ -3,6 +3,8 @@ import MetaTag from '../../components/MetaTag'
 import BreadCrumb from '../../components/BreadCrumb'
 import ProductCard from '../../components/ProductCard'
 import ReactStars from "react-rating-stars-component";
+import ImageZoom from "react-image-zooom";
+
 
 const ProductDetail = () => {
     const [orderedProduct, setOrderedProduct] = useState(true);
@@ -14,7 +16,11 @@ const ProductDetail = () => {
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-6">
-                            h
+                            <div className="product-detail-image">
+                                <div>
+                                    <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200" />
+                                </div>
+                            </div>
                         </div>
                         <div className="col-6">
                             g
@@ -23,7 +29,7 @@ const ProductDetail = () => {
                 </div>
             </div>
             <section className='description-wrapper py-3 py-lg-5 bg-light'>
-                <div className="container">
+                <div className="container-xxl">
                     <div className="row">
                         <div className="col-12">
                             <div className='p-3 bg-white'>
@@ -35,7 +41,7 @@ const ProductDetail = () => {
                 </div>
             </section>
             <section className='reviews-wrapper py-3 py-lg-5 bg-light'>
-                <div className="container">
+                <div className="container-xxl">
                     <div className="row">
                         <div className="col-12">
                             <div className='bg-white p-3'>
@@ -83,13 +89,16 @@ const ProductDetail = () => {
                                 </div>
                                 <div className="reviews">
                                     <div className="review">
-                                        <ReactStars
-                                            count={5}
-                                            value={4}
-                                            size={24}
-                                            edit={true}
-                                            activeColor="#ffd700"
-                                        />
+                                        <div className='d-flex align-items-center gap-10'>
+                                            <h6 className='mb-0'>Jarviz</h6>
+                                            <ReactStars
+                                                count={5}
+                                                value={4}
+                                                size={24}
+                                                edit={true}
+                                                activeColor="#ffd700"
+                                            />
+                                        </div>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, dolorem?</p>
                                     </div>
                                 </div>
@@ -100,7 +109,7 @@ const ProductDetail = () => {
                 </div>
             </section>
             <section className='popular-wrapper py-3 py-lg-5'>
-                <div className="container">
+                <div className="container-xxl">
                     <div className="row">
                         <div className="col-12">
                             <h3>Our Popular Product</h3>

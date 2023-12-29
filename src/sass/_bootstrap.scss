@@ -916,6 +916,16 @@ $light: #F5F5F7;
 
 
 // Product Detail Page
+.product-detail-image {
+    background-color: $white;
+    padding: 20px;
+    border-radius: 10px;
+
+    &>div {
+        border: 1px solid $gray;
+    }
+}
+
 .review-head {
     border-bottom: 1px solid $light-gray;
 
@@ -930,14 +940,20 @@ $light: #F5F5F7;
         color: $gray;
     }
 }
-.review-form{
-    h6{
+
+.review-form {
+    h6 {
         font-size: 16px;
         color: $gray;
     }
 }
-.reviews{
-    p{
+
+.reviews {
+    .review:not(:last-child) {
+        border-bottom: 1px solid $light-gray;
+    }
+
+    p {
         font-size: 14px;
         color: $gray;
     }
