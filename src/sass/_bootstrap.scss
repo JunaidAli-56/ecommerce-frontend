@@ -430,18 +430,21 @@ $light: #F5F5F7;
         }
     }
 }
-.blog-detail-card{
-    a{
+
+.blog-detail-card {
+    a {
         font-size: 15px;
         font-weight: 400;
         color: $dark-shade;
     }
-    h3{
+
+    h3 {
         font-size: 20px;
         font-weight: 600;
         color: $dark-shade;
     }
-    p{
+
+    p {
         color: $gray;
         font-size: 14px;
     }
@@ -904,8 +907,38 @@ $light: #F5F5F7;
 
 // Footer Links---
 
-.policy-card{
+// Policy   
+.policy-card {
     background-color: $white;
     padding: 20px;
     border-radius: 10px;
+}
+
+
+// Product Detail Page
+.review-head {
+    border-bottom: 1px solid $light-gray;
+
+    h3 {
+        font-size: 20px;
+        color: $dark-shade;
+    }
+
+    p,
+    a {
+        font-size: 14px;
+        color: $gray;
+    }
+}
+.review-form{
+    h6{
+        font-size: 16px;
+        color: $gray;
+    }
+}
+.reviews{
+    p{
+        font-size: 14px;
+        color: $gray;
+    }
 }

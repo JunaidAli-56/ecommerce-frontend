@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MetaTag from '../../components/MetaTag'
 import BreadCrumb from '../../components/BreadCrumb'
 import ProductCard from '../../components/ProductCard'
 import ReactStars from "react-rating-stars-component";
 
 const ProductDetail = () => {
+    const [orderedProduct, setOrderedProduct] = useState(true);
     return (
         <>
             <MetaTag title="Product Detail" />
@@ -37,22 +38,60 @@ const ProductDetail = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <div className="review-head d-flex justify-content-between align-items-end bg-white p-3">
-                                <div>
-                                    <h3>Reviews</h3>
-                                    <div className='d-flex align-items-center gap-10'>
+                            <div className='bg-white p-3'>
+                                <div className="review-head d-flex justify-content-between align-items-end pb-2">
+                                    <div>
+                                        <h3>Reviews</h3>
+                                        <div className='d-flex align-items-center gap-10'>
+                                            <ReactStars
+                                                count={5}
+                                                value={4}
+                                                size={24}
+                                                edit={false}
+                                                activeColor="#ffd700"
+                                            />
+                                            <p className='mb-0'>Based on 2 reviews</p>
+                                        </div>
+                                    </div>
+                                    {
+                                        orderedProduct && (
+                                            <div>
+                                                <a href="#" className='mb-1 text-dark text-decoration-underline'>Write a review</a>
+                                            </div>
+                                        )
+                                    }
+                                </div>
+                                <div className="review-form mt-3">
+                                    <form action="" className='d-flex flex-column gap-15'>
+                                        <h6 className='mb-0'>Write a review</h6>
+                                        <div>
+                                            <ReactStars
+                                                count={5}
+                                                value={4}
+                                                size={24}
+                                                edit={true}
+                                                activeColor="#ffd700"
+                                            />
+                                        </div>
+                                        <div>
+                                            <textarea name="" id="" className='form-control w-100' placeholder='Comments' cols="30" rows="4"></textarea>
+                                        </div>
+                                        <div className='d-flex justify-content-end'>
+                                            <button className="btn bg-dark text-white rounded-5 py-2 px-3">Submit Review</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div className="reviews">
+                                    <div className="review">
                                         <ReactStars
                                             count={5}
                                             value={4}
                                             size={24}
-                                            edit={false}
+                                            edit={true}
                                             activeColor="#ffd700"
                                         />
-                                        <p className='mb-0'>Based on 2 reviews</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, dolorem?</p>
                                     </div>
-                                </div>
-                                <div>
-                                    <a href="">Write a review</a>
                                 </div>
                             </div>
                         </div>
