@@ -916,7 +916,8 @@ $light: #F5F5F7;
 
 
 // Product Detail Page
-.product-detail-image {
+.product-detail-image,
+.product-details-box {
     background-color: $white;
     padding: 20px;
     border-radius: 10px;
@@ -928,6 +929,33 @@ $light: #F5F5F7;
         width: 48%;
     }
 
+}
+
+.product-details-box {
+    .border-bottom {
+        margin-bottom: 15px;
+        border-bottom: 1px solid $light-gray;
+        
+    }
+
+    .title,
+    .price {
+        font-size: 18px;
+        font-weight: 600;
+        color: $dark-shade;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+        color: $gray;
+        font-size: 14px;
+    }
+    a{
+        color: $gray;
+        text-decoration: underline;
+        font-weight: 500;
+    }
 }
 
 .review-head {

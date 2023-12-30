@@ -2,12 +2,25 @@ import React, { useState } from 'react'
 import MetaTag from '../../components/MetaTag'
 import BreadCrumb from '../../components/BreadCrumb'
 import ProductCard from '../../components/ProductCard'
+import Color from '../../components/Color'
 import ReactStars from "react-rating-stars-component";
 import ImageZoom from "react-image-zooom";
+import { GoGitCompare } from "react-icons/go";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { GoLink } from "react-icons/go";
 
 
 const ProductDetail = () => {
     const [orderedProduct, setOrderedProduct] = useState(true);
+    const copyToClipboard = (text) => {
+        console.log('text', text)
+        var textField = document.createElement('textarea')
+        textField.innerText = text
+        document.body.appendChild(textField)
+        textField.select()
+        document.execCommand('copy')
+        textField.remove()
+    }
     return (
         <>
             <MetaTag title="Product Detail" />
@@ -15,29 +28,114 @@ const ProductDetail = () => {
             <div className="main-product-wrapper py-lg-5 py-3 bg-light">
                 <div className="container-xxl">
                     <div className="row">
-                        <div className="col-6 bg-white">
+                        <div className="col-6">
                             <div className="product-detail-image">
                                 <div>
-                                    <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                    <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200" className="zoom-image" />
                                 </div>
                                 <div className="other-product-images mt-2 d-flex flex-wrap justify-content-between">
                                     <div>
-                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200" className="zoom-image" />
                                     </div>
                                     <div>
-                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200" className="zoom-image" />
                                     </div>
                                     <div>
-                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200" className="zoom-image" />
                                     </div>
                                     <div>
-                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200" className="zoom-image" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-6">
-                            g
+                            <div className="product-details-box">
+                                <div className='border-bottom'>
+                                    <h3 className='title'>Samsung Galaxy Note 10+ Mobile Phone...</h3>
+                                </div>
+                                <div className="border-bottom">
+                                    <h6 className='price'>$100</h6>
+                                    <div className='d-flex gap-10 align-items-center'>
+                                        <ReactStars
+                                            count={5}
+                                            value={4}
+                                            size={24}
+                                            edit={false}
+                                            activeColor="#ffd700"
+                                        />
+                                        <p className='mb-0'>2 reviews</p>
+                                    </div>
+                                    <a href="#review" className='mb-2'>write a review</a>
+                                </div>
+                                <div className="border-bottom">
+                                    <div className="d-flex align-items-center gap-10 mb-3">
+                                        <h3 className='title'>Type :</h3>
+                                        <p>Head</p>
+                                    </div>
+                                    <div className="d-flex align-items-center gap-10 mb-3">
+                                        <h3 className='title'>Type :</h3>
+                                        <p>Headset</p>
+                                    </div>
+                                    <div className="d-flex align-items-center gap-10 mb-3">
+                                        <h3 className='title'>Brand :</h3>
+                                        <p>Havels</p>
+                                    </div>
+                                    <div className="d-flex align-items-center gap-10 mb-3">
+                                        <h3 className='title'>Categories :</h3>
+                                        <p>airpods</p>
+                                    </div>
+                                    <div className="d-flex align-items-center gap-10 mb-3">
+                                        <h3 className='title'>Tags :</h3>
+                                        <p>Headphones</p>
+                                    </div>
+                                    <div className="d-flex align-items-center gap-10 mb-3">
+                                        <h3 className='title'>Availability :</h3>
+                                        <p>In Stock</p>
+                                    </div>
+                                    <div className="d-flex flex-column gap-10 mb-3">
+                                        <h3 className='title'>Size :</h3>
+                                        <div className='d-flex gap-15 flex-wrap'>
+                                            <span className='badge bg-white border border-1 text-dark border-secondary px-3 py-2'>S</span>
+                                            <span className='badge bg-white border border-1 text-dark border-secondary px-3 py-2'>M</span>
+                                            <span className='badge bg-white border border-1 text-dark border-secondary px-3 py-2'>L</span>
+                                            <span className='badge bg-white border border-1 text-dark border-secondary px-3 py-2'>XL</span>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex flex-column gap-10 mb-3">
+                                        <h3 className='title'>Color :</h3>
+                                        <Color />
+                                    </div>
+                                    <div className="d-flex align-items-center gap-15 mb-3">
+                                        <h3 className='title'>Quantity :</h3>
+                                        <div>
+                                            <input type="number" name='' min={1} max={20} className='form-control' style={{ width: "70px" }} id='' />
+                                        </div>
+                                        <div className='d-flex gap-15'>
+                                            <button className='btn btn-primary bg-dark text-white rounded-3'>Add to cart</button>
+                                            <button className='btn btn-primary rounded-3'>Buy it now</button>
+                                        </div>
+                                    </div>
+                                    <div className='d-flex align-items-center gap-15 mb-3'>
+                                        <div>
+                                            <a href="" className='text-decoration-none fw-normal'><IoIosHeartEmpty className='me-1' size={20} />Add to Wishlist</a>
+                                        </div>
+                                        <div>
+                                            <a href="" className='text-decoration-none fw-normal'><GoGitCompare className='me-1' size={20} />Add to Compare</a>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex flex-column gap-10 mb-3">
+                                        <h3 className='title'>Shipping & Return :</h3>
+                                        <p>Free shipping and returns available on all orders!
+                                            We ship all US domestic orders within<b> 5-10 business days!</b></p>
+                                    </div>
+                                    <div className='d-flex align-items-center gap-15 mb-3'>
+                                        <div>
+                                            <a href="javascript:void(0)" onClick={() => copyToClipboard("https://picsum.photos/seed/000/1920/1080")} className='text-decoration-none fw-normal'><GoLink className='me-1' size={20} />Share</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -54,7 +152,7 @@ const ProductDetail = () => {
                     </div>
                 </div>
             </section>
-            <section className='reviews-wrapper py-3 py-lg-5 bg-light'>
+            <section id="review" className='reviews-wrapper py-3 py-lg-5 bg-light'>
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-12">
