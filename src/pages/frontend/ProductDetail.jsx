@@ -15,10 +15,24 @@ const ProductDetail = () => {
             <div className="main-product-wrapper py-lg-5 py-3 bg-light">
                 <div className="container-xxl">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-6 bg-white">
                             <div className="product-detail-image">
                                 <div>
-                                    <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200" />
+                                    <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                </div>
+                                <div className="other-product-images mt-2 d-flex flex-wrap justify-content-between">
+                                    <div>
+                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                    </div>
+                                    <div>
+                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                    </div>
+                                    <div>
+                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                    </div>
+                                    <div>
+                                        <ImageZoom src="https://picsum.photos/seed/000/1920/1080" alt="A image to apply the ImageZoom plugin" zoom="200"  className="zoom-image"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>

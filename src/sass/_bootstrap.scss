@@ -920,10 +920,14 @@ $light: #F5F5F7;
     background-color: $white;
     padding: 20px;
     border-radius: 10px;
+}
 
+.other-product-images {
     &>div {
-        border: 1px solid $gray;
+        margin-top: 10px;
+        width: 48%;
     }
+
 }
 
 .review-head {
