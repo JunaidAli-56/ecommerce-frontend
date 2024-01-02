@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from "react-icons/fa";
 import svg from './svg'
+import newsletter from "../images/newsletter.png"
 const Footer = () => {
   const year = new Date().getFullYear()
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           <div className="row py-4 footer-upper">
             <div className="col-lg-5 col-md-12 col-sm-12 ps-5 newsletter-div">
               <div>
-                <img src="images/newsletter.png" alt="newsletters" />
+                <img src={newsletter} alt="newsletters" />
                 <h2 className="ms-2 me-4 text-white">SignUp For Newsletter</h2>
               </div>
             </div>

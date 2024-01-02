@@ -10,6 +10,32 @@ $light: #F5F5F7;
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
 
+// custom Style which apply on all
+.button-primary{
+    padding: 10px 15px;
+    text-align: center;
+    background-color: $dark-low;
+    color: $white;
+    font-size: 15px;
+    border-radius: 25px;
+    &:hover{
+        background-color: $primary;
+        color: $dark;
+    }
+}
+.button-secondary{
+    padding: 10px 15px;
+    text-align: center;
+    background-color: $primary;
+    color: $dark;
+    font-size: 15px;
+    border-radius: 25px;
+    &:hover{
+        background-color: $dark-low;
+        color: $white;
+    }
+}
+
 // Header Start
 .header-top-strip {
     background: $dark;
@@ -935,7 +961,7 @@ $light: #F5F5F7;
     .border-bottom {
         margin-bottom: 15px;
         border-bottom: 1px solid $light-gray;
-        
+
     }
 
     .title,
@@ -951,7 +977,8 @@ $light: #F5F5F7;
         color: $gray;
         font-size: 14px;
     }
-    a{
+
+    a {
         color: $gray;
         text-decoration: underline;
         font-weight: 500;
@@ -988,5 +1015,50 @@ $light: #F5F5F7;
     p {
         font-size: 14px;
         color: $gray;
+    }
+}
+
+
+// cart page 
+
+.cart-header {
+    border-bottom: 1px solid $gray;
+
+    h4 {
+        font-size: 13px;
+        color: $dark-shade;
+    }
+}
+
+.cart-col-1 {
+    width: 40%;
+}
+
+.cart-col-2 {
+    width: 10%;
+}
+
+.cart-col-3 {
+    width: 15%;
+}
+
+.cart-col-4 {
+    width: 15%;
+}
+
+.cart-data {
+    border-bottom: 1px solid $gray;
+
+    .price {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .cart-col-1 {
+        p {
+            color: $gray;
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
 }
