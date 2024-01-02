@@ -6,7 +6,7 @@ import ProductCard from '../../components/ProductCard';
 import Color from '../../components/Color';
 import Container from '../../components/Container';
 const Store = () => {
-    const [grid, setGrid] = useState(4);
+    const [grid, setGrid] = useState(3);
     return (
         <>
             <MetaTag title="Our Store" />
@@ -148,8 +148,9 @@ const Store = () => {
                             <div className="d-flex justify-content-between align-items-center">
                                 <div className="d-flex align-items-center gap-10">
                                     <p className='mb-0 d-block' style={{ "width": "50%" }}>Sort by:</p>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option value="best-selling" selected>Best Selling</option>
+                                    <select defaultValue={'Default'} className="form-select" aria-label="Default select example">
+                                        <option value='Default' disabled selected>Feature</option>
+                                        <option value="best-selling">Best Selling</option>
                                         <option value="title-ascending">Alphabetically, A-Z</option>
                                         <option value="title-descending">Alphabetically, Z-A</option>
                                         <option value="price-ascending">Price low to high</option>

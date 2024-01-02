@@ -13,8 +13,9 @@ import view from "../images/view.svg"
 const ProductCard = ({ grid }) => {
     const location = useLocation();
     return (
-        <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}>
-            <Link to=':id' className="product-card position-relative shadow-light">
+        <div className={`${location.pathname === "/product" ? `gr-${grid}` : "col-3"}`}>
+            <Link to={`${location.pathname == '/' ? '/product/:id' : location.pathname == '/product/:id' ? '/product/:id' : ':id'}`}
+                className="product-card position-relative shadow-light">
                 <div className="wishlist-icon position-absolute">
                     <button className='border-0 bg-transparent'>
                         <img src={wish} alt="wish" />

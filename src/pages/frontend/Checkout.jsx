@@ -31,8 +31,8 @@ const Checkout = () => {
                                 </p>
                                 <form action="" className='d-flex flex-wrap justify-content-between gap-15'>
                                     <div className="w-100">
-                                        <select className="form-select" aria-label="Default select example">
-                                            <option defaultValue='Select Country' disabled>Select Country</option>
+                                        <select defaultValue={'Default'} className="form-select" aria-label="Default select example">
+                                            <option value='Default' disabled>Select Country</option>
                                             <option value="3">Saudi Arabia</option>
                                             <option value="2">Palestine</option>
                                             <option value="1">Pakistan</option>
@@ -54,8 +54,8 @@ const Checkout = () => {
                                         <input type="text" className="form-control" placeholder='City' />
                                     </div>
                                     <div className='flex-grow-1'>
-                                        <select className="form-select" aria-label="Default select example">
-                                            <option defaultValue='Select State' disabled>Select State</option>
+                                        <select defaultValue={'DEFAULT'} className="form-select" aria-label="Default select example">
+                                            <option Value='DEFAULT' disabled>Select State</option>
                                             <option value="1">Lahore</option>
                                             <option value="3">Laliyain</option>
                                             <option value="2">Faisalabad</option>

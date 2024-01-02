@@ -3,6 +3,7 @@ import MetaTag from '../../components/MetaTag'
 import BreadCrumb from '../../components/BreadCrumb'
 import { Link } from 'react-router-dom'
 import Container from '../../components/Container'
+import CustomInput from '../../components/CustomInput'
 
 const ResetPassword = () => {
     return (
@@ -15,12 +16,12 @@ const ResetPassword = () => {
                         <div className="auth-card">
                             <form>
                                 <h5 className='text-center mb-4 fs-3'>Reset Password</h5>
-                                <div className="mb-3">
-                                    <input type="password" name='password' placeholder='Password' className="form-control" id="exampleInputPassword1" />
-                                </div>
-                                <div className="mb-3">
-                                    <input type="password" name='confirmPassword' placeholder='Confirm Password' className="form-control" id="exampleInputPassword2" />
-                                </div>
+                                <CustomInput
+                                    type="password" name='password' placeholder='Password' id="exampleInputPassword1"
+                                />
+                                <CustomInput
+                                    type="password" name='confirmPassword' placeholder='Confirm Password' id="exampleInputPassword2"
+                                />
                                 <div className='d-flex justify-content-center align-items-center flex-column'>
                                     <button type="submit" className="btn btn-primary w-100">Reset</button>
                                     <p className='my-2'>-- or --</p>
