@@ -16,9 +16,9 @@ const ProductCard = ({ grid }) => {
         <div className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}>
             <Link to=':id' className="product-card position-relative shadow-light">
                 <div className="wishlist-icon position-absolute">
-                    <Link>
+                    <button className='border-0 bg-transparent'>
                         <img src={wish} alt="wish" />
-                    </Link>
+                    </button>
                 </div>
                 <div className="product-image d-flex justify-content-center align-items-center">
                     <img src={watch} className="img-fluid" alt="product" />
@@ -34,22 +34,22 @@ const ProductCard = ({ grid }) => {
                         edit={false}
                         activeColor="#ffd700"
                     />
-                    <p className={`desc ${grid === 12 ? "d-block":"d-none"}`}>
+                    <p className={`desc ${grid === 12 ? "d-block" : "d-none"}`}>
                         "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt...
                     </p>
                     <p className='price'>$100.00</p>
                 </div>
                 <div className="action-bar position-absolute">
                     <div className="d-flex flex-column gap-10">
-                        <Link>
+                        <button className='border-0 bg-transparent'>
                             <img src={prodCompare} alt="compare" />
-                        </Link>
-                        <Link>
+                        </button>
+                        <button className='border-0 bg-transparent'>
                             <img src={view} alt="view" />
-                        </Link>
-                        <Link>
+                        </button>
+                        <button className='border-0 bg-transparent'>
                             <img src={addcart} alt="addcart" />
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </Link>

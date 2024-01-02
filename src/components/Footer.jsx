@@ -47,37 +47,31 @@ const Footer = () => {
             <div className="col-lg-2 col-md-3 col-sm-4 col-info">
               <h5>information</h5>
               <ul>
-                <li>
-                  <li><Link to='/terms-condition'>Terms of Service</Link></li>
-                  <li><Link to='/shipping-policy'>Shipping Policy</Link></li>
-                  <li><Link to='/refund-policy'>Refund Policy</Link></li>
-                  <li><Link to='/privacy-policy'>Privacy Policy</Link></li>
-                  <li><Link to='/blogs'>Blogs</Link></li>
-                </li>
+                <li><Link to='/terms-condition'>Terms of Service</Link></li>
+                <li><Link to='/shipping-policy'>Shipping Policy</Link></li>
+                <li><Link to='/refund-policy'>Refund Policy</Link></li>
+                <li><Link to='/privacy-policy'>Privacy Policy</Link></li>
+                <li><Link to='/blogs'>Blogs</Link></li>
               </ul>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-4 col-acc">
               <h5>account</h5>
               <ul>
-                <li>
-                  <li><Link>Size Chat</Link></li>
-                  <li><Link>About us</Link></li>
-                  <li><Link>Contact</Link></li>
-                  <li><Link>Search</Link></li>
-                  <li><Link>Faq</Link></li>
-                </li>
+                <li><Link>Size Chat</Link></li>
+                <li><Link>About us</Link></li>
+                <li><Link>Contact</Link></li>
+                <li><Link>Search</Link></li>
+                <li><Link>Faq</Link></li>
               </ul>
             </div>
             <div className="col-lg-2 col-md-12 col-sm-4 col-quickLinks">
               <h5>quick links</h5>
               <ul>
-                <li>
-                  <li><Link>Smart Watches</Link></li>
-                  <li><Link>Headphones</Link></li>
-                  <li><Link>Accessories</Link></li>
-                  <li><Link>Laptops</Link></li>
-                  <li><Link>Tablets</Link></li>
-                </li>
+                <li><Link>Smart Watches</Link></li>
+                <li><Link>Headphones</Link></li>
+                <li><Link>Accessories</Link></li>
+                <li><Link>Laptops</Link></li>
+                <li><Link>Tablets</Link></li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">

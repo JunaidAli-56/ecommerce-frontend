@@ -10,9 +10,13 @@ $light: #F5F5F7;
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
 
+body{
+    background-color: $light;
+}
 // custom Style which apply on all
 .button-primary{
     padding: 10px 15px;
+    border: 0;
     text-align: center;
     background-color: $dark-low;
     color: $white;
@@ -25,6 +29,7 @@ $light: #F5F5F7;
 }
 .button-secondary{
     padding: 10px 15px;
+    border: 0;
     text-align: center;
     background-color: $primary;
     color: $dark;
@@ -1060,5 +1065,41 @@ $light: #F5F5F7;
             font-size: 14px;
             font-weight: 400;
         }
+    }
+}
+
+// checkot page 
+
+.checkout-products-billing{
+    .image-box{
+        height: 100px;
+        width: 100px;
+        .product-count{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: -10px;
+            top: -10px;
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            background-color: $primary;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+    h4{
+        font-size: 16px;
+        color: $dark-shade;
+    }
+    p{
+        color: $gray;
+        margin-bottom: 0;
+    }
+    span{
+        font-size: 13px;
+        color: $gray;
+        margin-right: 8px;
+        text-transform: uppercase;
     }
 }
